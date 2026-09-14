@@ -120,6 +120,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <None Include="Database\01-esquema-y-datos.sql" />
     <Content Include="Global.asax" />
     <Content Include="Images\logo.svg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
