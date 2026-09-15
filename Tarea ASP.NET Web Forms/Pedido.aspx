@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pedido.aspx.cs" Inherits="Tarea_ASP.NET_Web_Forms.Pedido" %>
+﻿<%@ Page Title="Nuevo pedido" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pedido.aspx.cs" Inherits="Tarea_ASP.NET_Web_Forms.Pedido" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <h2 class="py-3">Nuevo pedido</h2>
@@ -31,18 +31,18 @@
     </div>
 
     <div class="row mb-3">
-        <div class="col-md-4">
+        <div class="col-md-6">
             <label class="form-label">Teléfono</label>
             <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control" MaxLength="30" />
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6">
             <label class="form-label">Dirección de entrega</label>
             <asp:TextBox ID="txtDireccion" runat="server" CssClass="form-control" MaxLength="200" />
         </div>
     </div>
 
     <div class="row mb-4">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <label class="form-label">Producto *</label>
             <asp:DropDownList ID="ddlProductos" runat="server" CssClass="form-select"
                               AppendDataBoundItems="true">
@@ -53,7 +53,7 @@
                 ErrorMessage="Debe seleccionar un producto." Text="*"
                 CssClass="text-danger" Display="Dynamic" />
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
             <label class="form-label">Cantidad *</label>
             <asp:TextBox ID="txtCantidad" runat="server" CssClass="form-control" Text="1" />
             <asp:RequiredFieldValidator runat="server" ControlToValidate="txtCantidad"
